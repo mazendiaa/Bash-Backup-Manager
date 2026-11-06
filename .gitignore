@@ -1,0 +1,10 @@
+
+# Backup files and logs
+docker/backups/
+*.tar.gz
+*.meta
+*.log
+
+# Temporary files
+*.tmp
+*.swp

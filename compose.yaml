@@ -1,0 +1,19 @@
+services:
+  backup-manager:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+
+    container_name: backup-manager
+    restart: unless-stopped
+    volumes:
+      - ./docker/backups:/app/backups
+      - ${HOME}/data:/app/source:ro
+      - cron-data:/var/spool/cron/crontabs
+    environment:
+      BACKUP_DIR: /app/backups
+
+    stdin_open: true
+    tty: true
+volumes:
+  cron-data:

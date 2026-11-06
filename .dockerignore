@@ -1,0 +1,9 @@
+
+.git
+.gitignore
+
+**/*.log
+**/*.tar.gz
+**/*.meta
+
+docker/backups/
