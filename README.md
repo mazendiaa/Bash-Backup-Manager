@@ -49,7 +49,7 @@ Bash_Projects/
 ### 1. Clone the Repository
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone <https://github.com/mazendiaa/Bash-Backup-Manager.git>
 cd Bash_Projects
 ```
 
